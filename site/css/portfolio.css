@@ -10,6 +10,16 @@
   color: #750ff7;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.menu ul {
+  display: flex;
+  list-style-type: none;
+}
+
+
 .description {
   color: #ffffff;
   display: flex;
@@ -21,6 +31,12 @@
 .description p {
   width: 60%;
   text-align: center;
+}
+
+.introduction .firstSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .desktop {
@@ -79,4 +95,24 @@ img {
 p {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (max-width: 700px) {
+  .desktop {
+    display: none;
+  }
+  .skills {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .skills {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+
+  }
 }

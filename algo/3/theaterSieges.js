@@ -17,10 +17,21 @@ exemple :
 ] 
 */
 
-function theaterSieges() {
-  // Your code here !
+
+
+function theaterSieges(row) {  
+  let places = [];
+  for (i = 1 ; i <= row ; i++) {
+    let rowPlaces = [];
+    for (let placeNumber = 1; placeNumber <= 10; placeNumber++) {
+     rowPlaces.push(`${i} - ${placeNumber}`);
+    } 
+    places.push(rowPlaces);
+    
+  }
+  return places
 }
 
-console.log(theaterSieges());
+console.log(theaterSieges(3));
 
 module.exports = theaterSieges;
